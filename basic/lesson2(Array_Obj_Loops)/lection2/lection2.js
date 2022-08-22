@@ -181,10 +181,68 @@
 // const deletedItem = names.pop() // повертає той item який видалив ('Maks)
 // names.shift(); // автоматично витягує один item(element) с початку масива;
 // const deleteItem = names.shift() // повертає той item який видалив ('Ivan')
+
+// Методи, які можна примінити до str:
+// -- string - це тип даних, але в недрах під капотом це масив символів
 //
-
-
-
+// let str = 'HELLO WORLD';
+//
+// let s = str.replace('O','A') // змінює перший заданий символ на новий заданий
+// console.log(s); // 'HELLA WORLD'
+//
+// let newStr = str.replace('HELLO','Good'); // так же змінює слово на нове
+// console.log(newStr); // 'Good WORLD'
+//
+// let newStrAll = str.replaceAll('O','A'); // змінить кожен заданий символ в str на новий
+// console.log(newStrAll); // 'HELLA WARLD'
+//
+//Можна застосовувати як до str так і до array
+// let strSlice = str.slice(0,4); // вирізає щось с певного(включно) по певний(не вкл.) елемент
+// console.log(strSlice); //HEll (в стрічці як і масиві починається з 0)
+//
+// let userNames = 'Dima,Lena,Tanya,Maryna,Vladislav';
+// // Метод який робить з str масив елементів за заданим separator
+// let arrayUserNames = userNames.split(',');
+// console.log(arrayUserNames); // ['Dima,Lena,Tanya,Maryna,Vladislav']
+//
+// let ages = [23, 45, 10, 19, 21];
+//
+// let agesStr = ages.toString(); // перетворює масив чисел у string
+// console.log(agesStr); // 23, 45, 10, 19, 21
+//
+// let agesStrJoin = ages.join('!'); // об'єднує елементи масива в одну довгу str за заданим separator
+// console.log(agesStrJoin); // 23!45!10!19!21
+//
+// Прибирає в str усі пробіли (прибирає c початку і кінця)
+// let email = '   velorok@gmail.com';
+// let email2 = '      velorok@gmail.com         ';
+//
+// console.log(email)
+// console.log(email.trim());
+//
+// console.log(email2)
+// console.log(email2.trim());
+//
+// let email = 'Velorok.Misha@gmail.com';
+//
+// let emailLowerCase = email.toLowerCase(); // метод який робить усі елементи str в маленький регістр
+// console.log(emailLowerCase); // 'velorok.misha@gmail.com'
+//
+// let emailUpperCase = email.toUpperCase(); // метод який робить усі елементи str в великий регістр (caps)
+// console.log(emailUpperCase); // 'VELOROK.MISHA@GMAIL.COM'
+//
+// let phoneNumber = '+380993432211';
+//
+// let a = phoneNumber.startsWith('+380'); // перевіряє чи починається даний str с заданого елемента
+// let b = phoneNumber.endsWith('+380'); //  аналогічний до startWith, але перевіряє з кінця
+//
+// //Повертає значення boolean
+// console.log(a); // true
+// console.log(b); // false
+//
+// let email = 'maryna.phyah@gmail.com';
+// let emailHaveDog = email.includes('@') // перевіряє чи є даний елемент у нашій str
+// console.log(emailHaveDog); // true (повертає значення boolean)
 
 
 
